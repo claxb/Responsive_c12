@@ -1,28 +1,22 @@
 body {
   background-color: hotpink;
+  margin: 0%;
 }
 
 .main-container {
   font-family: 'Montserrat', sans-serif;
-
   display: grid;
   grid-template-areas:
   'title title title'
   'orange-block pink-block purple-block';
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  width:min-content;
-  height: 100%;
-  margin: 0 auto;
 }
 
 .title { 
   grid-area: title;
   background-color: turquoise;
   font-family: 'Montserrat', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 40px;
   }
   
@@ -77,13 +71,20 @@ body {
     margin-right: 40px;
   }
 
+  h1 {
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
   @media (max-width: 576px) {
     .main-container {
       display: grid;
       grid-template-areas: 
-      'title'
-      'orange-block'
-      'purple-block'
-      'pink-block';
+      '... title ...'
+      '... orange-block ...'
+      '... purple-block ...'
+      '... pink-block ...';
     }
   }
+
