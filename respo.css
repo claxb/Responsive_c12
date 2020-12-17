@@ -1,5 +1,4 @@
 body {
-  background-color: hotpink;
   margin: 0%;
 }
 
@@ -11,6 +10,9 @@ body {
   'orange-block pink-block purple-block';
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  width: 935px;
+  height: 750px;
+  margin: 0 auto;
 }
 
 .title { 
